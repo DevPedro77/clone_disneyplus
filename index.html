@@ -8,16 +8,31 @@
   <link rel="shortcut icon" href="./dist/images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <header class="header">
+    <div class="header__container">
+        <h1 class="">
+          <img class="header__logo" src="./dist/images/disneyplus.svg" alt="Titulo da Pagina">
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#" class="button button--secondary">Assine agora</a> 
+          </li>
+          <li class="header__links__item">
+              <a href="#" class="button button--dark">Entrar</a>
+          </li>
+        </ul>
+    </div>
+  </header>
   <section class="hero">
     <div class="hero__content"> 
-      <h1 class="hero__content__branding">
+      <div class="hero__content__branding">
         <img src="./dist/images/disneyplus.svg" alt="Titulo da Pagina">
-      </h1>
+      </div>
       <h3 class="title--small">
         As melhores historias em um só lugar.
       </h3>
       <p>
-          <a href="#" class="link-text">Assinar o Disney+</a><br>
+          <a href="#plans" class="link-text">Assinar o Disney+</a><br>
         <span class="text">
           R$ 27,90/mês o R$ 279,90/ano á vista*
         </span>
@@ -125,7 +140,7 @@
     </li>
     </ul>
   </section>
-  <section class="plans">
+  <section class="plans" id="plans">
     <h2 class="title--big">Escolha seu plano</h2>
     <ul class="plans__list">
       <li class="plans__list__item">
@@ -167,7 +182,10 @@
     </div>
   </section>
   <section class="image-text-section image-text-section--image-full-width">
-    <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão filme">
+    <picture>
+      <source media="(max-width: 768px)" srcset="./dist/images/fundo_rei_leao_celular.png"/>
+      <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão filme">
+    </picture>
     <div class="image-text-section__text__section image-text-section--image-full-width__text_container">
       <h2 class="title">Baixe filmes e séries</h2>
       <p class="text--big">
@@ -241,7 +259,7 @@
             </p>
         </div>
       </li>
-      <li class="faq__questions__item faq__questions__item--is-open">
+      <li class="faq__questions__item">
         <div class="faq__questions__item__question" data-faq-question>
           Já tem o Disney+ ou o Star+ e quer o Combo+?
         </div>
@@ -263,6 +281,22 @@
         </div>
         <div class="faq__questions__item__answer text--big">
           Você pode utilizar: cartão de débito, cartão de crédito, PayPal, Mercado Pago, e também empresas parceiras como Google Play Store, App Store da Apple; Mercado Livre e provedores locais de TV, telefonia e internet.
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div class="faq__questions__item__question" data-faq-question>
+          Como posso ver conteúdo com classificação indicativa até 16 e 18?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          Para poder acessar o catálogo completo que inclui conteúdo com classificação indicativa até 16 e 18, todos os usuários do Disney+ na América Latina devem atualizar as configurações de controle parental do perfil. É possível restringir o conteúdo de cada perfil e também adicionar um PIN de bloqueio. Os usuários que preferirem manter a configuração atual vão continuar aproveitando o Disney+ com a classificação indicativa até 14, podendo alterá-la a qualquer momento em "Editar Perfis".
+        </div>
+      </li>
+      <li class="faq__questions__item">
+        <div class="faq__questions__item__question" data-faq-question>
+          Onde posso assistir ao Disney+?
+        </div>
+        <div class="faq__questions__item__answer text--big">
+          O aplicativo do Disney+ está disponível em dispositivos móveis, navegadores, videogames, decodificadores e smart TVs. Confira a lista completa de dispositivos compatíveis na Central de ajuda.
         </div>
       </li>
     </ul>
